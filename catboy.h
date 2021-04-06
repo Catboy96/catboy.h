@@ -130,7 +130,7 @@ void  gtbCountDown(int seconds)
 /**********************************************************************************************************************
     memory show
 **********************************************************************************************************************/
-#if (GTB_CONFIG_LOOP_CONTROL > 0 && GTB_CONFIG_MEMORY_SHOW > 0)
+#if (GTB_CONFIG_LOOP_CONTROL > 0 && GTB_CONFIG_MEMORY_SHOW > 0 && GTB_CONFIG_BIT_MANIPULATION > 0)
 /**********************************************************************************************************************
     description:    Memory show (8-bit access)
     parameters:     addr:           Start address for showing
@@ -227,7 +227,7 @@ void  gtbMemShow16(unsigned long addr, unsigned short *data, unsigned long len)
         addr += 2;
     }
 }
-#endif  // GTB_CONFIG_LOOP_CONTROL > 0 && GTB_CONFIG_MEMORY_SHOW > 0
+#endif  // GTB_CONFIG_LOOP_CONTROL > 0 && GTB_CONFIG_MEMORY_SHOW > 0 && GTB_CONFIG_BIT_MANIPULATION > 0
 #endif  // __CATBOY_H_
 /**********************************************************************************************************************
     end
